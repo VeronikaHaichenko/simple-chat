@@ -95,6 +95,7 @@ class Auth {
     }
   }
 
+//comment
   Future signOut(BuildContext ctx) async {
     try {
       return await _auth.signOut();

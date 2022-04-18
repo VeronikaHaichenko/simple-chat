@@ -93,7 +93,6 @@ class DatabaseService {
           userSnapshot.data() as Map<String, dynamic>;
       String username = userData['username'];
       String userImageUrl = userData['user_image'];
-      // log.i('UserData: username = $username , userImageUrl = $userImageUrl');
       String? lastMessage;
       DateTime createdAtDate = DateTime.now();
       Timestamp createdAtTimestamp;
@@ -107,7 +106,6 @@ class DatabaseService {
         createdAtTimestamp = messagesSnapshot.docs.first.data()['createdAt'];
         createdAtDate = createdAtTimestamp.toDate().toLocal();
         // createdAt = DateFormat().add_MMMMd().add_Hm().format(createdAtDate);
-        // log.i(createdAt);
       }
       if (lastMessage != null) {
         chatCards.add(
