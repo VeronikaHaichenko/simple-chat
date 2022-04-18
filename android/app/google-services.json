@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "632031318056",
+    "project_id": "simple-chat-e134c",
+    "storage_bucket": "simple-chat-e134c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632031318056:android:0d5807e201c9d4a91ca51d",
+        "android_client_info": {
+          "package_name": "com.veronikahaichenko.simple_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632031318056-8frqivco68amh47k2r8or2dpc531bbmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPGml6HXmjkmDcFdTUw3tULozDBc_9IOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632031318056-8frqivco68amh47k2r8or2dpc531bbmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
