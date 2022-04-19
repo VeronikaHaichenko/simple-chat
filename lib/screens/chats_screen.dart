@@ -1,14 +1,9 @@
-import 'dart:developer';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_chat/models/chat_card_model.dart';
 import 'package:simple_chat/screens/splash_screen.dart';
 import 'package:simple_chat/services/auth.dart';
 import 'package:simple_chat/screens/users_screen.dart';
 import 'package:simple_chat/services/database.dart';
-import 'package:simple_chat/widgets/auth/auth_form.dart';
 import 'package:simple_chat/widgets/chats/chat_card.dart';
 
 class ChatsScreen extends StatelessWidget {
@@ -18,8 +13,6 @@ class ChatsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final deviceSize = MediaQuery.of(context).size;
-    // log.i('Chats screen');
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).primaryColor,

@@ -40,8 +40,6 @@ class _NewMessageState extends State<NewMessage> {
             minLines: 1,
             maxLines: 3,
             decoration: InputDecoration(
-              // focusedBorder: InputBorder.none,
-              // enabledBorder: InputBorder.none,
               label: Text(
                 'Send a message...',
                 style: Theme.of(context).textTheme.bodyText1,

@@ -15,13 +15,6 @@ class UsersScreen extends StatelessWidget {
         backgroundColor: Theme.of(context).primaryColor,
         title: Text('SIMPLE CHAT'),
       ),
-      //   body: Center(
-      //     child: Text(
-      //       'No users yet. But you can invite your friends :)',
-      //       style: Theme.of(context).textTheme.bodyText1,
-      //     ),
-      //   ),
-      // );
       body: Container(
         height: deviceSize.height,
         width: deviceSize.width,

@@ -1,14 +1,8 @@
-import 'dart:io';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
-import 'package:intl/intl.dart';
 import 'package:logger/logger.dart';
 import 'package:collection/collection.dart';
-import 'package:simple_chat/models/user_model.dart';
 import 'package:simple_chat/widgets/auth/auth_form.dart';
-import 'package:simple_chat/widgets/chats/chat_card.dart';
 
 import '../models/chat_card_model.dart';
 
@@ -133,6 +127,7 @@ class DatabaseService {
     return querySnapshot.docs.isNotEmpty;
   }
 
+  //создание чата
   Future createNewChat(String firstUid, String secondUid) async {
     return await chatsCollection.doc().set({
       'first_id': firstUid,

@@ -1,9 +1,7 @@
 import 'dart:io';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_chat/models/user_model.dart';
 import 'package:simple_chat/services/database.dart';
@@ -73,7 +71,6 @@ class Auth {
         username,
         email,
       );
-      // _uid = user.uid;
       return _userFromFirebaseUser(user);
     } on FirebaseAuthException catch (error) {
       var message = 'An error occurred, please check your credentials!';
@@ -95,7 +92,6 @@ class Auth {
     }
   }
 
-//comment
   Future signOut(BuildContext ctx) async {
     try {
       return await _auth.signOut();

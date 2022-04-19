@@ -2,7 +2,7 @@ class ChatCardModel {
   final String chatUid;
   final String username;
   final String userImageUrl;
-  final String lastMessage;
+  String lastMessage;
   final DateTime createdAt;
 
   ChatCardModel({

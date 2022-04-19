@@ -18,7 +18,6 @@ class _UserImagePickerState extends State<UserImagePicker> {
   File? _pickedImage;
 
   final defaultImage = const AssetImage('assets/images/smile2.png');
-  // File defaultImage = File('assets/images/smile.png');
 
   Future<void> _pickImage(bool isCamera) async {
     final picker = ImagePicker();
@@ -42,8 +41,6 @@ class _UserImagePickerState extends State<UserImagePicker> {
       children: [
         CircleAvatar(
           backgroundColor: Theme.of(context).primaryColor,
-          // foregroundImage:
-          //     _pickedImage == null ? FileImage(defaultImage) : null,
           backgroundImage: _pickedImage == null
               ? defaultImage as ImageProvider
               : FileImage(_pickedImage!),

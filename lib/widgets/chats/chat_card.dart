@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:simple_chat/widgets/users/user_card.dart';
 
 import '../../screens/chat_screen.dart';
-import '../../services/database.dart';
 
 class ChatCard extends StatelessWidget {
-  final DatabaseService _services = DatabaseService();
   final String chatUid;
   final String username;
   final String userImage;
@@ -34,7 +31,6 @@ class ChatCard extends StatelessWidget {
             arguments: [username, userImage, chatUid]);
       },
       child: Container(
-        // padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
         padding: const EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 0),
         child: Row(
           children: [
@@ -77,25 +73,5 @@ class ChatCard extends StatelessWidget {
         ),
       ),
     );
-    // Column(
-    //   children: [
-    //     Text(
-    //       chatUid,
-    //       style: TextStyle(color: Colors.white),
-    //     ),
-    //     Text(
-    //       username,
-    //       style: TextStyle(color: Colors.white),
-    //     ),
-    //     Text(
-    //       userImage,
-    //       style: TextStyle(color: Colors.white),
-    //     ),
-    //     Text(
-    //       lastMessage,
-    //       style: TextStyle(color: Colors.white),
-    //     )
-    //   ],
-    // );
   }
 }

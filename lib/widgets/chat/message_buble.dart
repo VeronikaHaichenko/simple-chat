@@ -75,34 +75,3 @@ class MessageBubble extends StatelessWidget {
     );
   }
 }
-
-class NewWidget extends StatelessWidget {
-  const NewWidget({
-    Key? key,
-    required this.createdAt,
-  }) : super(key: key);
-
-  final String createdAt;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          child: Text(
-            'Message text long text',
-            style: Theme.of(context).textTheme.bodyText1,
-          ),
-        ),
-        Align(
-          alignment: Alignment.centerRight,
-          child: Text(
-            createdAt,
-            style: TextStyle(color: Colors.white60),
-            textAlign: TextAlign.end,
-          ),
-        ),
-      ],
-    );
-  }
-}

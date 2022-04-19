@@ -1,16 +1,13 @@
-// ignore_for_file: prefer_const_constructors, avoid_unnecessary_containers
+// ignore_for_file: must_be_immutable
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:simple_chat/services/database.dart';
-import 'package:simple_chat/widgets/auth/auth_form.dart';
 
 import '../widgets/chat/messages.dart';
 import '../widgets/chat/new_message.dart';
 
 class ChatScreen extends StatelessWidget {
   static const routeName = '/chat';
-  final _service = DatabaseService();
   late String username;
   late String imageUrl;
   // late String userUid;

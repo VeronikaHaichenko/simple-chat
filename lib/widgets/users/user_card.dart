@@ -1,10 +1,5 @@
-import 'dart:developer';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_chat/screens/chat_screen.dart';
-import 'package:simple_chat/services/auth.dart';
 import 'package:simple_chat/services/database.dart';
 
 import '../auth/auth_form.dart';
@@ -37,8 +32,6 @@ class UserCard extends StatelessWidget {
         await _services
             .getChatUid(currentUid, userUid)
             .then((value) => chatUid = value);
-
-        // await _services.getChats();
 
         Navigator.of(context).pushReplacementNamed(ChatScreen.routeName,
             arguments: [username, userImage, chatUid]);

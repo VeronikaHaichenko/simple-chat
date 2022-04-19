@@ -1,12 +1,7 @@
-// ignore_for_file: prefer_const_constructors
-
-import 'dart:developer';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
-import 'package:provider/provider.dart';
 import 'package:simple_chat/screens/auth_screen.dart';
 import 'package:simple_chat/screens/chat_screen.dart';
 import 'package:simple_chat/screens/chats_screen.dart';

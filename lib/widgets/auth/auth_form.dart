@@ -2,11 +2,8 @@
 
 import 'dart:io';
 
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:simple_chat/services/auth.dart';
-import 'package:simple_chat/services/database.dart';
 import 'package:simple_chat/widgets/auth/user_picker_image.dart';
 
 import 'login_part.dart';
@@ -47,12 +44,12 @@ class _AuthFormState extends State<AuthForm> {
         dynamic result = await _auth.signIn(
             _userEmail.trim(), _userPassword.trim(), context);
         currentUid = result.uid;
-        print(result.uid);
+        // print(result.uid);
       } else {
         dynamic result = await _auth.signUp(_userImage, _userName.trim(),
             _userEmail.trim(), _userPassword.trim(), context);
         currentUid = result.uid;
-        print(result);
+        // print(result);
       }
     }
   }
