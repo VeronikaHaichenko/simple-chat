@@ -7,16 +7,3 @@ class UserModel {
 
   UserModel({required this.uid});
 }
-
-class ChatData {
-  final String chatUid;
-  final String firstUid;
-  final String secondUid;
-  Stream<QuerySnapshot<Map<String, dynamic>>>? messagesSnaphot;
-
-  ChatData(
-      {required this.chatUid,
-      required this.firstUid,
-      required this.secondUid,
-      this.messagesSnaphot});
-}
